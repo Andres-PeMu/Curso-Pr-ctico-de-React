@@ -1,9 +1,13 @@
 const path = require('path');
+const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
 	entry: './src/index.js',
+	devServer:{
+        historyApiFallback: true,
+	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'bundle.js',
