@@ -10,10 +10,8 @@ const EditMyAcount = () => {
                     <div>
                         <label for="name" class="label">Name</label>
                         <p class="value">Camila Yokoo</p>
-
                         <label for="email" class="label">Email</label>
                         <p class="value">camilayokoo@gmail.com</p>
-
                         <label for="password" class="label">Password</label>
                         <p class="value">*********</p>
                     </div>

@@ -1,11 +1,14 @@
 import React from 'react';
 import '../styles/miOrderList';
 
+import arrow from '@icons/flechita.svg';
+import close from '@icons/icon_close.png';
+
 const MiOrderList = () => {
     return (
         <aside class="product-detail">
             <div class="title-container">
-                <img src="./icons/flechita.svg" alt="arrow" />
+                <img src={arrow} alt="arrow" />
                 <p class="title">My order</p>
             </div>
             <div class="my-order-content">
@@ -15,7 +18,7 @@ const MiOrderList = () => {
                     </figure>
                     <p>Bike</p>
                     <p>$30,00</p>
-                    <img src="./icons/icon_close.png" alt="close" />
+                    <img src={close} alt="close" />
                 </div>
                 <button class="primary-button">
                     Checkout

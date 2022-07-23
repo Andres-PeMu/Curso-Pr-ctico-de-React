@@ -16,9 +16,17 @@ module.exports = {
 	mode: 'development',
 	resolve: {
 		extensions: ['.js', '.jsx'],
+		alias: {
+			'@icons': path.resolve(__dirname, 'src/assets/icons/'),
+			'@logos': path.resolve(__dirname, 'src/assets/logos/'),
+		}
 	},
 	module: {
 		rules: [
+			{
+				test: /\.(png|svg|jpg|gif)$/,
+				type: 'asset',
+			},
 			{
 				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
